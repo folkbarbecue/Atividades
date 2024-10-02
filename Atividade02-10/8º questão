@@ -1,0 +1,38 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+//Variaveis:
+	int n1, n2;
+	
+    Scanner tec = new Scanner(System.in);
+    
+	public void Entrar() {
+		
+		//Variaveis locais
+
+		//Funções
+		System.out.println("Insira um valor aleatório");
+		n1 = tec.nextInt();
+		System.out.println("Insira um outro valor aleatório");
+		n2 = tec.nextInt();
+		if (n1>0) {
+			funcao();
+		} else {
+			System.out.println("Negativo:(");
+		}
+		if (n2>0) {
+System.out.println("Numero 2 é maior que 0");
+		} else {
+			System.out.println("Negativo:(");
+		}
+
+
+  }
+	public void funcao() {
+		//Variáveis locais
+		
+		//Funções
+      System.out.println("O valor 1 é positivoo");
+	}
+}
