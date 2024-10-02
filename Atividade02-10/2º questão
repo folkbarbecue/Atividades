@@ -1,0 +1,28 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+
+    Scanner tec = new Scanner(System.in);
+	public void Entrar() {
+		//Variaveis
+		int Ano, Atual;
+		
+		//Sistema e função
+		System.out.println("Coloque o ano de seu nascimento");
+		Ano = tec.nextInt();
+		System.out.println("----------------------");
+		System.out.println("Em que ano você está agora?");
+		Atual = tec.nextInt();
+		int idade =  Atual-Ano;
+		if (idade>=16) {
+			permi();
+		} else {
+System.out.println("Nah, você não pode votar, que paia");
+		}
+	}
+	public void permi() {
+		System.out.println("Você já pode votar");
+		
+	}
+}
