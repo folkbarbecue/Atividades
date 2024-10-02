@@ -1,0 +1,32 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+//Variaveis:
+	int n1, n2;
+	
+    Scanner tec = new Scanner(System.in);
+    
+	public void Entrar() {
+		
+		//Variaveis locais
+
+		//Funções
+		System.out.println("Insira um valor aleatório");
+		n1 = tec.nextInt();
+		if (n1>=50&&n1<=80) {
+			funcao();
+		} else {
+System.out.println("So lamento");
+		}
+
+
+
+  }
+	public void funcao() {
+		//Variáveis locais
+		
+		//Funções
+      System.out.println("O valor está dentro do orçamento");
+	}
+}
