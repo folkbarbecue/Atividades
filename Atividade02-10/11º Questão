@@ -1,0 +1,43 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+//Variaveis:
+	 String n;
+	 int v;
+	 double p;
+	 //Outras coisas aí
+    Scanner tec = new Scanner(System.in);
+    
+	public void Entrar() {
+		
+		//Variaveis locais
+
+		//Funções
+		System.out.println("Qual seu nome?");
+		n = tec.nextLine();
+		System.out.println("Qual o valor do seu salário");
+		v = tec.nextInt();
+		System.out.println("Qual o valor da prestação");
+		p = tec.nextDouble();
+		double pr = v*0.20;
+		if(p>pr) {
+funcao2();
+		} else {
+funcao();
+		}
+
+  }
+	public void funcao2() {
+		//Variáveis locais
+
+		//Funções
+		System.out.println("O emprestimo não pode ser concluido");
+	}
+	public void funcao() {
+		//Variáveis locais
+
+		//Funções
+		System.out.println("O emprestimo pode ser concluido "+n);
+	}
+}
