@@ -1,0 +1,34 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+
+    Scanner tec = new Scanner(System.in);
+	public void Entrar() {
+		//Variaveis
+		double n1, n2, n3, n4;
+		
+		//Sistema e função
+System.out.println("Insira a nota a av1");
+n1 = tec.nextDouble();
+
+System.out.println("Insira a nota a av2");
+n2 = tec.nextDouble();
+System.out.println("Insira a nota a av3");
+n3 = tec.nextDouble();
+System.out.println("Insira a nota a av4");
+n4 = tec.nextDouble();
+
+double med = (n1+n2+n3+n4)/4;
+if (med>=7) {
+	Aprovado();
+} else {
+System.out.println("Você é um jacaré ? porque você repitil de ano");
+}
+	}
+	public void Aprovado() {
+		System.out.println("Parabéns, você foi aprovado");
+		
+	}
+
+}
