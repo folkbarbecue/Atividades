@@ -1,0 +1,27 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+//Variaveis:
+	int n1, n2; int sb;	
+    Scanner tec = new Scanner(System.in);
+    
+	public void Entrar() {
+		
+		//Variaveis locais
+
+		//Funções
+		 System.out.println("coloque o seu salário base");
+		 sb = tec.nextInt();
+           funcao();
+
+  }
+	public void funcao() {
+		//Variáveis locais
+		 double gra = sb*0.08;
+		 double im = sb*0.11;
+		 double tot = (gra+sb)-im;
+		//Funções
+		 System.out.println("O valor total com a gratificação e imposto é : "+tot);
+	}
+}
