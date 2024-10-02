@@ -1,0 +1,27 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+//Variaveis:
+	double money;
+	
+    Scanner tec = new Scanner(System.in);
+    
+	public void Entrar() {
+		
+		//Variaveis locais
+
+		//Funções
+		System.out.println("Coloque o seu dinheiro por hora trabalhada");
+		money = tec.nextDouble();
+		funcao();
+
+
+  }
+	public void funcao() {
+		//Variáveis locais
+      double total = 180 * money;
+		//Funções
+      System.out.println("O seu valor mensal é igual a: "+total);
+	}
+}
