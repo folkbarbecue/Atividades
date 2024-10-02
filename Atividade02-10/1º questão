@@ -1,0 +1,53 @@
+package aula03;
+
+import java.util.Scanner;
+
+public class Login {
+   Scanner tec = new Scanner(System.in);
+   // login e senha
+   // public = Acesso publico
+   // void = sem retorno
+   // Entrar = Verbo de conexao
+   
+   public void Entrar() {
+       String login, senha;
+       String login1 = "Italo";
+       String senha1 = "Teste@123";
+       
+System.out.println("Entre com seu Login");
+   login = tec.nextLine();
+   System.out.println("------------------");
+
+System.out.println("Entre com sua Senha");
+senha = tec.nextLine();
+
+   if (login.equals(login1) && senha.equals(senha1)) {
+       Media();
+   } else {
+       System.out.println("Entrada Proibida");
+   }
+
+
+   }
+   public void Media() {
+       double n1, n2, media1;
+       System.out.println("Entre com N1");
+       n1 = tec.nextDouble();
+       System.out.println("Entre com N2");
+       n2 = tec.nextDouble();
+       media1 = (n1+n2)/2;
+       System.out.println("---------");
+       System.out.println(media1);
+       System.out.println("---------");
+       if (media1 > 7) {
+           System.out.println("Aprovado");
+       } else {
+           
+           System.out.println("Reprovado");
+       }
+       
+   }
+   
+
+
+}
