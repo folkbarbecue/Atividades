@@ -1,0 +1,39 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+//Variaveis:
+	 String n;
+	 int v;
+    Scanner tec = new Scanner(System.in);
+    
+	public void Entrar() {
+		
+		//Variaveis locais
+
+		//Funções
+		System.out.println("Qual o seu nome");
+		n = tec.nextLine();
+		System.out.println("Qual o seu ano de nascimento");
+		v = tec.nextInt();
+		int to = 2024-v;
+		if(to>=18) {
+			System.out.println(n+", você pode entrar");
+		}else {
+			funcao2();
+		}
+
+  }
+	public void funcao2() {
+		//Variáveis locais
+
+		//Funções
+			System.out.println(n+", você pode não pode entrar");	
+	}
+	public void funcao() {
+		//Variáveis locais
+
+		//Funções
+			System.out.println(n+", você pode entrar");	
+	}
+}
