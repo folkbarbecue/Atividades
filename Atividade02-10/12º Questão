@@ -1,0 +1,33 @@
+package aula002;
+import java.util.Scanner;
+
+public class Login {
+//Variaveis:
+	int ht;
+	double sb;
+	 //Outras coisas aí
+    Scanner tec = new Scanner(System.in);
+    
+	public void Entrar() {
+		
+		System.out.println("Quantas horas você trabalhou por semana?");
+		ht = tec.nextInt();
+		System.out.println("Quanto você ganha por hora trabalhada?");
+		sb = tec.nextDouble();
+		if(ht>40) {
+funcao();
+		}
+		double tot = (sb+ht)*16;
+		System.out.println("O seu salario mensal é de: "+ tot);
+  }
+
+	public void funcao() {
+		//Variáveis locais
+		int hp = ht-40;
+		double sm = (sb*0.5)+sb;
+				double st = sm * hp;
+				double tot = st *4;
+		//Funções
+
+	}
+}
